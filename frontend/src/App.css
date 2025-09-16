@@ -1,0 +1,454 @@
+/* MindMingle Teal Theme Styles */
+
+.App {
+  min-height: 100vh;
+}
+
+/* Custom Teal Theme Colors */
+:root {
+  --primary-teal: #20c997;
+  --primary-teal-dark: #1aa179;
+  --primary-teal-light: #6ed5b8;
+  --secondary-teal: #17a2b8;
+  --accent-teal: #0dcaf0;
+  --success-teal: #198754;
+  --info-teal: #0dcaf0;
+  --warning-teal: #ffc107;
+  --danger-teal: #dc3545;
+}
+
+/* Primary button styling with teal theme */
+.btn-primary {
+  background-color: var(--primary-teal);
+  border-color: var(--primary-teal);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, var(--secondary-teal) 0%, var(--primary-teal-dark) 50%, var(--primary-teal) 100%);
+  border-color: var(--primary-teal-dark);
+}
+
+.btn-outline-secondary:hover{
+  background: linear-gradient(90deg, var(--secondary-teal) 0%, var(--primary-teal-dark) 50%, var(--primary-teal) 100%);
+  border-color: var(--primary-teal-dark);
+}
+.btn-outline-primary {
+  color: var(--primary-teal);
+  border-color: var(--primary-teal);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-teal);
+  border-color: var(--primary-teal);
+}
+
+/* Text primary color */
+.text-primary {
+  color: var(--primary-teal) !important;
+}
+
+/* Background primary */
+.bg-primary {
+  background-color: var(--primary-teal) !important;
+}
+
+/* Navbar styling */
+.navbar-light .navbar-brand {
+  color: var(--primary-teal);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #495057;
+  transition: color 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--primary-teal);
+}
+
+.navbar-light .navbar-text {
+  color: #495057;
+}
+
+/* Card hover effect with teal accent */
+.card:hover {
+  box-shadow: 0 4px 12px rgba(32, 201, 151, 0.15);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* Button styling */
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Form styling */
+.form-control {
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--primary-teal);
+  box-shadow: 0 0 0 0.2rem rgba(32, 201, 151, 0.25);
+}
+
+/* Alert styling */
+.alert {
+  border-radius: 8px;
+  border: none;
+}
+
+.alert-success {
+  background-color: rgba(25, 135, 84, 0.1);
+  color: var(--success-teal);
+}
+
+.alert-danger {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: var(--danger-teal);
+}
+
+/* Card styling */
+.card {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Progress bar */
+.progress {
+  border-radius: 8px;
+  background-color: rgba(32, 201, 151, 0.1);
+}
+
+.progress-bar {
+  background-color: var(--primary-teal);
+}
+
+/* Navbar shadow */
+.navbar {
+  box-shadow: 0 2px 8px rgba(32, 201, 151, 0.1);
+}
+
+/* Step overview */
+.steps-overview {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* Step item */
+.step-item {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.step-item:hover {
+  background-color: rgba(32, 201, 151, 0.05);
+  border-radius: 8px;
+}
+
+/* Step number */
+.step-number {
+  font-weight: bold;
+  color: var(--primary-teal);
+}
+
+/* Range slider styling */
+.form-range::-webkit-slider-thumb {
+  background-color: var(--primary-teal);
+}
+
+.form-range::-moz-range-thumb {
+  background-color: var(--primary-teal);
+}
+
+/* Badge styling */
+.badge {
+  border-radius: 6px;
+}
+
+/* Link styling */
+a {
+  color: var(--primary-teal);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-teal-dark);
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+/* Form check styling */
+.form-check-input:checked {
+  background-color: var(--primary-teal);
+  border-color: var(--primary-teal);
+}
+
+/* Spinner styling */
+.spinner-border {
+  color: var(--primary-teal);
+}
+
+/* Modal blur effect */
+.blur-background {
+  filter: blur(3px);
+  transition: filter 0.3s ease;
+  pointer-events: none;
+}
+
+/* Modal backdrop */
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+}
+
+/* Modal content styling */
+.modal-content {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  border-bottom: 1px solid rgba(32, 201, 151, 0.1);
+  background-color: rgba(32, 201, 151, 0.05);
+}
+
+.modal-footer {
+  border-top: 1px solid rgba(32, 201, 151, 0.1);
+  background-color: rgba(32, 201, 151, 0.05);
+}
+
+/* Privacy and Terms content */
+.privacy-content, .terms-content {
+  line-height: 1.6;
+  color: #495057;
+}
+
+.privacy-content h4, .terms-content h4 {
+  color: var(--primary-teal);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.privacy-content h5, .terms-content h5 {
+  color: var(--primary-teal-dark);
+  margin-top: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Goals Page Specific Styles */
+.goal-card {
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--primary-teal) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.goal-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(32, 201, 151, 0.02) 0%, rgba(23, 162, 184, 0.02) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.goal-card:hover::before {
+  opacity: 1;
+}
+
+.goal-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(32, 201, 151, 0.15) !important;
+}
+
+.goal-card.completed {
+  border-left-color: var(--success-teal) !important;
+  background-color: rgba(25, 135, 84, 0.05);
+}
+
+.goal-card.completed::before {
+  background: linear-gradient(135deg, rgba(25, 135, 84, 0.05) 0%, rgba(32, 201, 151, 0.05) 100%);
+}
+
+.goal-card.completed:hover {
+  box-shadow: 0 8px 25px rgba(25, 135, 84, 0.15) !important;
+}
+
+.goal-card .card-body {
+  position: relative;
+  z-index: 1;
+}
+
+/* Stats Cards Animation */
+.stats-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(32, 201, 151, 0.2) !important;
+}
+
+/* Filter Buttons */
+.btn-check:checked + .btn-outline-primary {
+  background-color: var(--primary-teal);
+  border-color: var(--primary-teal);
+  color: white;
+}
+
+.btn-check:checked + .btn-outline-warning {
+  background-color: var(--warning-teal);
+  border-color: var(--warning-teal);
+  color: white;
+}
+
+.btn-check:checked + .btn-outline-success {
+  background-color: var(--success-teal);
+  border-color: var(--success-teal);
+  color: white;
+}
+
+/* Goal Toggle Button */
+.goal-toggle-btn {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.goal-toggle-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+
+.goal-toggle-btn:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+/* Empty State */
+.empty-state {
+  background: linear-gradient(135deg, rgba(32, 201, 151, 0.05) 0%, rgba(23, 162, 184, 0.05) 100%);
+  border-radius: 12px;
+}
+
+/* Form Enhancements */
+.goal-form .form-control:focus {
+  border-color: var(--primary-teal);
+  box-shadow: 0 0 0 0.2rem rgba(32, 201, 151, 0.25);
+  transform: translateY(-1px);
+}
+
+.goal-form .btn-primary {
+  background: linear-gradient(135deg, var(--primary-teal) 0%, var(--secondary-teal) 100%);
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.goal-form .btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.goal-form .btn-primary:hover::before {
+  left: 100%;
+}
+
+/* Loading States */
+.loading-shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .goal-card .col-1 {
+    flex: 0 0 auto;
+    width: auto;
+  }
+  
+  .goal-card .col-8 {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .goal-card .col-3 {
+    flex: 0 0 auto;
+    width: auto;
+  }
+}
+
+/* Goal Card Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Filter Button States */
+.btn-check:checked + .btn-outline-primary {
+  background-color: var(--primary-teal);
+  border-color: var(--primary-teal);
+  color: white;
+}
+
+.btn-check:checked + .btn-outline-warning {
+  background-color: var(--warning-teal);
+  border-color: var(--warning-teal);
+  color: white;
+}
+
+.btn-check:checked + .btn-outline-success {
+  background-color: var(--success-teal);
+  border-color: var(--success-teal);
+  color: white;
+}
